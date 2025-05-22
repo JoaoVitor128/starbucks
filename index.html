@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Corporation Site Not Oficcial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="circulo"></div>
+
+    <img src="./imgs/logo.png" alt="logo" class="logo">
+
+    <script src="./mobile-navbar.js"></script>
+
+    <div class="conteudo">
+        <div class="txt">
+            <h1>não é só um café é <span>Starbucks</span></h1>
+            <p>
+                Starbucks Corporation é uma rede multinacional americana de cafeterias e torrefações com sede em
+                Seattle,
+                Washington. É a maior rede de cafeterias do mundo. <small>não ficial</small>
+            </p>
+
+            <button>Veja nossos caféses</button>
+        </div>
+        <div class="copogd">
+            <img src="./imgs/img1.png" alt="copao" class="copao">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./imgs/img-pequena1.png" alt="copo" class="copinho verde">
+        <img src="./imgs/img-pequena2.png" alt="copo" class="copinho amarelo">
+        <img src="./imgs/img-pequena3.png" alt="copo" class="copinho rosa">
+    </div>
+
+
+</body>
+
+<script>
+let circulo = document.querySelector(".circulo")
+let img = document.querySelector(".copao")
+let verde = document.querySelector(".verde")
+let amarelo = document.querySelector(".amarelo")
+let rosa = document.querySelector(".rosa")
+
+amarelo.addEventListener("click", ()=>{
+    img.src = "./imgs/img2.png"
+    circulo.style.background = "#eb7495"
+})
+
+verde.addEventListener("click", ()=>{
+    img.src = "./imgs/img1.png"
+    circulo.style.background = "#017143"
+})
+
+rosa.addEventListener("click", ()=>{
+    img.src = "./imgs/img3.png"
+    circulo.style.background = "#ff0084"
+})
+
+</script>
+
+</html>
